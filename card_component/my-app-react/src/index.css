@@ -1,27 +1,62 @@
-.card {
-	width: 280px;
-	padding: 1.25rem;
-	border: 1px solid #ddd;
-	border-radius: 12px;
-	background: #fff;
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-	text-align: center;
-  display: inline-block;
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f7f6f3;
+  color: #1a1a1a;
+  padding: 2rem;
 }
 
-.card img {
-	width: 100%;
-	border-radius: 10px;
-	margin-bottom: 1rem;
-	object-fit: cover;
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  color: #1a1a1a;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
-.card h2 {
-	margin: 0 0 0.5rem;
-	font-size: 1.25rem;
+/* H2: mejor jerarquía visual inspirada en el estilo de `h1` */
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-align: center;
 }
 
-.card p {
-	margin: 0;
-	color: #555;
+@media (max-width: 520px) {
+  h2 { font-size: 1.05rem; }
 }
+
+.page-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e0ddd6;
+}
+
+.ejercicio {
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  border: 1.5px solid;
+}
+
+/* Color por sección — cada app usa su clase */
+.ej-purple { background: #EEEDFE; border-color: #AFA9EC; }
+.ej-purple h2 { color: #3C3489; }
+
+.ej-teal   { background: #E1F5EE; border-color: #5DCAA5; }
+.ej-teal h2 { color: #085041; }
+
+.ej-coral  { background: #FAECE7; border-color: #F0997B; }
+.ej-coral h2 { color: #4A1B0C; }
+
+.ej-pink   { background: #FBEAF0; border-color: #ED93B1; }
+.ej-pink h2 { color: #4B1528; }
+
+.ej-amber  { background: #FAEEDA; border-color: #EF9F27; }
+.ej-amber h2 { color: #412402; }

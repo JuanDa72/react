@@ -4,8 +4,11 @@ import Student from './Student/Student'
 function App() {
   return (
     <>
-        <Student name="Jjsfjdjfjsjadj" age="20" isStudent={true}></Student>
+      <div>
+        <h2>Props Section</h2>
+        <Student name="Juan David" age="20" isStudent={true}></Student>
         <Student name="Maria" age={22} isStudent="nose"></Student>
+      </div>
     </>
   );
 }
