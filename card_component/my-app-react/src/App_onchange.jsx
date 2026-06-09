@@ -2,9 +2,10 @@ import OnChange from "./OnChange/OnChange";
 
 function App_onchange(){
     return(
-        <div>
+        <section className="ejercicio ej-pink">
+            <h2 className="h2 ej-pink">OnChange component with useState - user videogame</h2>
             <OnChange/>
-        </div>
+        </section>
     );
 }
 

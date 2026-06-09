@@ -1,0 +1,119 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9d174d;
+}
+.input, .select {
+  padding: 0.55rem 0.8rem;
+  border-radius: 8px;
+  border: 1.5px solid #f5b6ce;
+  background: linear-gradient(180deg, #fff7fb 0%, #fff 100%);
+  font-size: 0.9rem;
+  color: #4a1029;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.input:focus, .select:focus {
+  border-color: #db2777;
+  box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.14);
+}
+
+.preview {
+  background: linear-gradient(180deg, #fff 0%, #fff7fb 100%);
+  border-radius: 12px;
+  border: 1.5px solid #f5b6ce;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 10px 30px rgba(190, 24, 93, 0.08);
+}
+.avatarBig {
+  font-size: 3.5rem;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle at 30% 30%, #fbcfe8, #f9a8d4);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.charName {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4a1029;
+}
+.charClass {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #fce7f3;
+  color: #9d174d;
+}
+.stats {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.statRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.statLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: #be185d;
+  width: 60px;
+}
+.statBarBg {
+  flex: 1;
+  height: 6px;
+  background: #fce7f3;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.statBar {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #db2777, #f472b6);
+}
+.statVal {
+  font-size: 11px;
+  font-weight: 700;
+  color: #9d174d;
+  width: 24px;
+  text-align: right;
+}
+.weaponRow {
+  font-size: 13px;
+  color: #be185d;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .layout { grid-template-columns: 1fr; }
+}

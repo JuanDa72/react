@@ -3,6 +3,7 @@ import App_list from './App_list'
 import App_counter from './App_counter'
 import App_color_picker from './App_color_picker'
 import App_onchange from './App_onchange'
+import App_tamagotchi from './App_tamagotchi'
 
 function App(){
     return (
@@ -11,8 +12,9 @@ function App(){
     <App_card/>
     <App_list/>
     <App_counter/>
-    <App_onchange/>
+    <App_onchange/> 
     <App_color_picker/>
+    <App_tamagotchi/>
     </>
     );
 }
